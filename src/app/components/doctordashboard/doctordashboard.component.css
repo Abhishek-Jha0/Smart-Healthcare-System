@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Merienda+One&family=Staatliches&display=swap');
+
+/* Sidebar Menu */
+.menu {
+  position: relative;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  width: 0px;
+  height: 115vh;
+  float: left;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-300px);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+}
+.menuToggle {
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.menuToggle:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 0 15px #00d4ff;
+  color: #fff;
+}
+.menuToggle_open {
+  transform: rotate(90deg);
+}
+.hideMenu {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0px);
+  width: 230px;
+}
+
+/* Menu Items */
+.menu ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.menu ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+}
+.menu ul li:hover {
+  background: rgba(0, 148, 255, 0.2);
+  transform: translateX(10px);
+}
+.menu ul li a {
+  padding: 12px 15px;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #e3f2fd;
+  font-family: 'Merienda One', cursive;
+  transition: all 0.4s ease;
+}
+.menu ul li a:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 8px #00e5ff;
+}
+
+/* User Image */
+#userimg {
+  width: 100px;
+  height: 150px;
+  display: block;
+  margin: 15px auto;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Container */
+.container {
+  margin-left: 10%;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  border-radius: 15px;
+  border: none;
+  width: 35%;
+  margin: 2% 5% 5.5% 5%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  padding: 3%;
+  color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.dashboard-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 183, 255, 0.6);
+}
+
+/* Circle Icon */
+.circle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  float: right;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 2s infinite;
+}
+#icons {
+  font-size: 3em;
+  color: #1e88e5;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Texts */
+.text {
+  font-family: 'Aladin', cursive;
+  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: bolder;
+  color: white;
+  margin-top: 10px;
+}
+.sub-text {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: #e3f2fd;
+}

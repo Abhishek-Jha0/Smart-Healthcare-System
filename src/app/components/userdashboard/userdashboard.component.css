@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Merienda+One&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* ==== SIDE MENU ==== */
+.menu {
+  position: relative;
+  background-color: #2a3950;
+  width: 0px;
+  height: 105vh;
+  float: left;
+  transition: all 0.3s ease;
+  transform: translateX(-300px);
+}
+.menuToggle {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: #192538;
+  color: white;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+.menuToggle:hover {
+  text-decoration: none;
+  color: #00e0ff;
+  transform: scale(1.1);
+}
+.menuToggle_open {
+  margin: 0px 0px;
+  transform: rotate(90deg);
+}
+.hideMenu {
+  transition: all 0.3s ease;
+  transform: translateX(0px);
+  width: 200px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0px;
+  transition: all 0.3s ease;
+}
+.menu ul ul {
+  padding-left: 10px;
+  margin-left: 0px;
+  background-color: #192539;
+}
+.menu ul li {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.menu ul li:hover {
+  background-color: #192539;
+  border-bottom: 1px solid #4274c8;
+  transform: translateX(5px);
+}
+.menu ul li:hover a {
+  color: #00e0ff;
+}
+.menu ul li a {
+  padding: 10px 10px;
+  display: block;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  transition: transform .2s, color .3s;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+/* ==== USER IMAGE ==== */
+#userimg {
+  width: 100px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-top: 5%;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 2px solid #00c6ff;
+  box-shadow: 0 0 10px rgba(0,255,255,0.6);
+}
+
+/* ==== CONTAINER ==== */
+.container {
+  margin-left: 10%;
+}
+
+/* ==== DASHBOARD CARD ==== */
+.dashboard-card {
+  background: linear-gradient(135deg, #3c0ee1, #3c0ee1);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 5px 10px 18px rgba(0,0,0,0.3);
+  width: 35%;
+  margin: 2% 5% 5.5% 5%;
+  padding: 3%;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 15px 25px rgba(0,0,0,0.4);
+}
+
+/* ==== CIRCLE ICON BOX ==== */
+.circle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  float: right;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform .3s ease;
+}
+.circle:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+#icons {
+  font-size: 2.8em;
+  color: #0629b5;
+}
+
+/* ==== TEXTS ==== */
+.text {
+  font-family: 'Aladin';
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: bolder;
+  color: white;
+}
+.sub-text {
+  font-family: serif;
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: #dff;
+}
+
+/* ==== WELCOME HEADING ==== */
+.welcome-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 25px 0;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #00ffb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  position: relative;
+  text-transform: uppercase;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* underline animation */
+.welcome-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00ffb3, #0072ff);
+  animation: underline 1.5s ease forwards;
+}
+
+/* animations */
+@keyframes underline {
+  from { width: 0; }
+  to { width: 320px; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

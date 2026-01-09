@@ -1,0 +1,164 @@
+/* Wrapper background */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container Card */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 420px;
+  max-width: 95%;
+  text-align: center;
+}
+
+/* Tab Buttons */
+.headbtn1, .headbtn2, .headbtn3 {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #eee;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.headbtn1:hover, .headbtn2:hover, .headbtn3:hover {
+  background: #2575fc;
+  color: #fff;
+}
+
+/* Active Tab Highlight */
+.headbtn1.active, .headbtn2.active, .headbtn3.active {
+  background: #6a11cb;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Form visibility */
+.user-login-form,
+.doctor-login-form,
+.admin-login-form {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.user-login-form.active,
+.doctor-login-form.active,
+.admin-login-form.active {
+  display: block;
+}
+
+/* Headings */
+.textual {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.form-control:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37,117,252,0.4);
+}
+
+/* Validation Errors */
+.is-invalid {
+  border: 1px solid red !important;
+}
+
+.text-danger {
+  font-size: 13px;
+  color: red;
+}
+
+/* Hint */
+.hint {
+  font-size: 12px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Checkbox and links */
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.link {
+  color: #2575fc;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.loginbtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginbtn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.loginbtn:hover:not(:disabled) {
+  background: #6a11cb;
+}
+
+/* Sign up section */
+.sign-up {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Social icons */
+.text-center i {
+  margin: 10px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s;
+}
+
+.text-center i:hover {
+  color: #2575fc;
+}

@@ -1,0 +1,172 @@
+/* === Container Layout === */
+.register {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.register .row {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+}
+
+/* === Left Panel === */
+.register-left {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.register-left img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.register-left h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.register-left p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #eee;
+}
+
+.register-left .loginbtn {
+  background: #fff;
+  color: #2575fc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-left .loginbtn:hover {
+  background: #f0f0f0;
+  color: #6a11cb;
+}
+
+/* === Right Panel === */
+.register-right {
+  background: #fff;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.register-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2575fc;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* === Tabs === */
+.nav-tabs {
+  border: none;
+  margin-bottom: 25px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #555;
+  transition: 0.3s;
+}
+
+.nav-tabs .nav-link:hover {
+  background: #f0f0f0;
+}
+
+.nav-tabs .nav-link.active {
+  background: #2575fc;
+  color: #fff;
+  box-shadow: 0px 4px 12px rgba(37, 117, 252, 0.3);
+}
+
+/* === Forms === */
+.register-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-control {
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 12px;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.4);
+}
+
+/* === Error Messages === */
+.is-invalid {
+  border-color: red !important;
+}
+
+.text-danger {
+  font-size: 13px;
+}
+
+/* === Checkbox === */
+.checkbox {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkbox input {
+  margin-right: 6px;
+}
+
+/* === Register Button === */
+.btnRegister {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btnRegister:hover {
+  background: #6a11cb;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .register .row {
+    flex-direction: column;
+  }
+
+  .register-left, .register-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .register-right {
+    padding: 20px;
+  }
+}
